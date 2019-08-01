@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header-container flex jc-between ai-center">
+			<a href="../index.html" class="header__logo title">левша138</a>
+			<div class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav class="nav">
+				<ul class="nav-ul flex jc-between">
+					<li class="nav__li"><a href="services.html" class="nav__item">каталог изделий</a></li>
+					<li class="nav__li"><a href="about.html" class="nav__item">о нас</a></li>
+					<li class="nav__li"><a href="steps.html" class="nav__item">этапы работы</a></li>
+					<li class="nav__li"><a href="blog.html" class="nav__item">блог</a></li>
+					<li class="nav__li"><a href="prices.html" class="nav__item">цены</a></li>
+					<li class="nav__li"><a href="gallery.html" class="nav__item">галерея</a></li>
+					<li class="nav__li"><a href="contacts.html" class="nav__item current">контакты</a></li>
+				</ul>
+				<div class="header-callback mobile-show">
+					<a class="header__tel" href="tel:+74951492995">+7 (495) 149-29-95</a>
+					<span class="modal-btn" data-target="callback">Заказать обратный звонок</span>
+				</div>
+			</nav>
+			<div class="header-aside flex jc-between">
+				<div class="header-callback">
+					<a class="header__tel" href="tel:+74951492995">+7 (495) 149-29-95</a>
+					<span class="modal-btn" data-target="callback">Заказать обратный звонок</span>
+				</div>
+				<button class="scroll-to-calc header__btn standart-btn standart-btn_gold">Рассчитать стоимость</button>
+			</div>
+		</div>
+	</header>
+	<main>
+		<ul class="breadcrumbs wrapper">
+      <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="#">Контакты</a></li>
+    </ul>
+    
+    <section class="contacts wrapper">
+      <h1 class="contacts__title title-l title-l_blue">Контакты</h1>
+      <div class="contacts-container flex">
+        <address class="address flex flex-column">
+          <h2 class="contacts__subtitle title">мы на связи</h2>
+          <div class="address__item">
+            <span class="address__name">Телефон:</span>
+            <a href="tel:+74951492995"><i class="icon-tel"></i>+7 (495) 149-29-95</a>
+          </div>
+          <div class="address__item">
+            <span class="address__name">Почта:</span>
+            <a href="mailto:contact@proektresurs.ru"><i class="icon-mail-2"></i>contact@proektresurs.ru</a>
+          </div>
+          <div class="address__item">
+            <span class="address__name">Телефон:</span>
+            <a href="#"><i class="icon-inst"></i>Мы в instagram</a>
+          </div>
+        </address>
+        <div class="contacts-form">
+          <h2 class="contacts__subtitle title">задайте нам вопрос</h2>
+          <input class="contacts-form__name" type="text" placeholder="Имя">
+          <input class="contacts-form__tel" type="tel" placeholder="Телефон*">
+          <textarea class="contacts-form__textarea" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+          <div class="flex ai-center">
+            <button class="standart-btn standart-btn_blue">отправить</button>
+            <p>Нажимая “Отправить” вы соглашаетесь <br> с <a class="politics-link" target="_blank" href="politics.html">политикой конфиденциальности</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+	</main>
+	<footer class="footer flex ai-center">
+		<div class="modal modal_standart" data-target="callback">
+			<div class="modal-container">
+				<div class="modal-close"></div>
+				<h1 class="modal__title title-l title-l_blue">обратный звонок</h1>
+				<input type="text" placeholder="Имя">
+				<input type="tel" placeholder="Телефон*">
+				<button class="standart-btn standart-btn_gold mx-auto">заказать звонок</button>
+				<p class="mx-auto">Нажимая “Заказать звонок” вы соглашаетесь <br> с <a href="politics.html" class="politics-link">политикой конфиденциальности</a></p>
+			</div>
+		</div>
+		<div class="wrapper flex jc-between ai-center">
+			<a href="../index.html" class="footer__logo title">Левша138</a>
+			<a href="tel:+74951492995" class="footer__tel">+7 (495) 149-29-95</a>
+			<div class="footer-container flex jc-between ai-center">
+				<a href="mailto:contact@proektresurs.ru" class="footer__email"><i class="icon-mail"></i>contact@proektresurs.ru</a>
+				<a href="#" class="footer__inst"><i class="icon-inst"></i>мы в instagram</a>
+			</div>
+		</div>
+	</footer>
+	<script src="../script/jquery.js"></script>
+	<script src="../script/slick.min.js"></script>
+	<script src="../script/script.js"></script>
+</body>
+</html>

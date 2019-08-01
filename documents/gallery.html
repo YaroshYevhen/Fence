@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+	<header class="header">
+        <div class="header-container flex jc-between ai-center">
+            <a href="../index.html" class="header__logo title">левша138</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-ul flex jc-between">
+                    <li class="nav__li"><a href="services.html" class="nav__item">каталог изделий</a></li>
+                    <li class="nav__li"><a href="about.html" class="nav__item">о нас</a></li>
+                    <li class="nav__li"><a href="steps.html" class="nav__item">этапы работы</a></li>
+                    <li class="nav__li"><a href="blog.html" class="nav__item">блог</a></li>
+                    <li class="nav__li"><a href="prices.html" class="nav__item">цены</a></li>
+                    <li class="nav__li"><a href="gallery.html" class="nav__item current">галерея</a></li>
+                    <li class="nav__li"><a href="contacts.html" class="nav__item">контакты</a></li>
+                </ul>
+                <div class="header-callback mobile-show">
+                    <a class="header__tel" href="tel:+74951492995">+7 (495) 149-29-95</a>
+                    <span class="modal-btn" data-target="callback">Заказать обратный звонок</span>
+                </div>
+            </nav>
+            <div class="header-aside flex jc-between">
+                <div class="header-callback">
+                    <a class="header__tel" href="tel:+74951492995">+7 (495) 149-29-95</a>
+                    <span class="modal-btn" data-target="callback">Заказать обратный звонок</span>
+                </div>
+                <button class="scroll-to-calc header__btn standart-btn standart-btn_gold">Рассчитать стоимость</button>
+            </div>
+        </div>
+    </header>
+	<main>
+		<ul class="breadcrumbs wrapper">
+      <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="#">Галерея</a></li>
+    </ul>
+    <section class="gallery wrapper">
+    	<h1 class="gallery__title title-l title-l_blue">галерея</h1>
+    	<div class="gallery-filter">
+    		<span class="gallery-filter__current flex ai-center"><i class="icon-filter"></i><span class="text">Все проекты</span><i class="icon-dropdown"></i></span>
+    		<ul class="gallery-filter__dropdown">
+    			<li class="gallery-filter__item current">Все проекты</li>
+    			<li class="gallery-filter__item">Ворота</li>
+    			<li class="gallery-filter__item">Заборы</li>
+    			<li class="gallery-filter__item">Навесы и козырьки</li>
+    			<li class="gallery-filter__item">Входные группы</li>
+    			<li class="gallery-filter__item">Лестницы</li>
+    			<li class="gallery-filter__item">Перила</li>
+    			<li class="gallery-filter__item">Ограждения</li>
+    			<li class="gallery-filter__item">Беседки</li>
+    			<li class="gallery-filter__item">Мангалы и коптильни</li>
+    			<li class="gallery-filter__item">Столы и скамейки</li>
+    		</ul>
+    	</div>
+    	<div class="gallery-container flex">
+    		<div class="gallery-item" data-images='["../img/gallery-1.jpg", "../img/gallery-2.jpg"]'>
+    			<div class="gallery__img" style="background-image: url(../img/gallery-1.jpg);">
+    				<div class="gallery-hover modal-btn flex jc-end ai-center flex-column" data-target="gallery">
+    					<button class="standart-btn standart-btn_black gallery-hover__btn">заказать такое изделие</button>
+    					<span class="gallery-hover__text">Смотреть все фото (+3)</span>
+    				</div>
+    			</div>
+    			<span class="gallery__name">Гаражные ворота Ритена</span>
+    			<span class="gallery__id">Арт 123456</span>
+    		</div>
+    		<div class="gallery-item" data-images='["../img/gallery-3.jpg", "../img/gallery-4.jpg"]'>
+    			<div class="gallery__img" style="background-image: url(../img/gallery-2.jpg);">
+    				<div class="gallery-hover modal-btn flex jc-end ai-center flex-column" data-target="gallery">
+    					<button class="standart-btn standart-btn_black gallery-hover__btn">заказать такое изделие</button>
+    					<span class="gallery-hover__text">Смотреть все фото (+3)</span>
+    				</div>
+    			</div>
+    			<span class="gallery__name">Откатные стальные ворота</span>
+    			<span class="gallery__id">Арт 654321</span>
+    		</div>
+    		<div class="gallery-item" data-images='["../img/gallery-5.jpg", "../img/gallery-1.jpg"]'>
+    			<div class="gallery__img" style="background-image: url(../img/gallery-3.jpg);">
+    				<div class="gallery-hover modal-btn flex jc-end ai-center flex-column" data-target="gallery">
+    					<button class="standart-btn standart-btn_black gallery-hover__btn">заказать такое изделие</button>
+    					<span class="gallery-hover__text">Смотреть все фото (+3)</span>
+    				</div>
+    			</div>
+    			<span class="gallery__name">Откатные ворота и калитка</span>
+    			<span class="gallery__id">Арт 111111</span>
+    		</div>
+    		<div class="gallery-item" data-images='["../img/gallery-1.jpg", "../img/gallery-2.jpg"]'>
+    			<div class="gallery__img" style="background-image: url(../img/gallery-4.jpg);">
+    				<div class="gallery-hover modal-btn flex jc-end ai-center flex-column" data-target="gallery">
+    					<button class="standart-btn standart-btn_black gallery-hover__btn">заказать такое изделие</button>
+    					<span class="gallery-hover__text">Смотреть все фото (+3)</span>
+    				</div>
+    			</div>
+    			<span class="gallery__name">Гаражные ворота Ритена</span>
+    			<span class="gallery__id">Арт 123456</span>
+    		</div>
+    		<div class="gallery-item" data-images='["../img/gallery-1.jpg", "../img/gallery-2.jpg"]'>
+    			<div class="gallery__img" style="background-image: url(../img/gallery-5.jpg);">
+    				<div class="gallery-hover modal-btn flex jc-end ai-center flex-column" data-target="gallery">
+    					<button class="standart-btn standart-btn_black gallery-hover__btn">заказать такое изделие</button>
+    					<span class="gallery-hover__text">Смотреть все фото (+3)</span>
+    				</div>
+    			</div>
+    			<span class="gallery__name">Гаражные ворота Ритена</span>
+    			<span class="gallery__id">Арт 123456</span>
+    		</div>
+    		<div class="gallery-item" data-images='["../img/gallery-1.jpg", "../img/gallery-2.jpg"]'>
+    			<div class="gallery__img" style="background-image: url(../img/gallery-1.jpg);">
+    				<div class="gallery-hover modal-btn flex jc-end ai-center flex-column" data-target="gallery">
+    					<button class="standart-btn standart-btn_black gallery-hover__btn">заказать такое изделие</button>
+    					<span class="gallery-hover__text">Смотреть все фото (+3)</span>
+    				</div>
+    			</div>
+    			<span class="gallery__name">Гаражные ворота Ритена</span>
+    			<span class="gallery__id">Арт 123456</span>
+    		</div>
+    		<div class="gallery-item" data-images='["../img/gallery-1.jpg", "../img/gallery-2.jpg"]'>
+    			<div class="gallery__img" style="background-image: url(../img/gallery-2.jpg);">
+    				<div class="gallery-hover modal-btn flex jc-end ai-center flex-column" data-target="gallery">
+    					<button class="standart-btn standart-btn_black gallery-hover__btn">заказать такое изделие</button>
+    					<span class="gallery-hover__text">Смотреть все фото (+3)</span>
+    				</div>
+    			</div>
+    			<span class="gallery__name">Гаражные ворота Ритена</span>
+    			<span class="gallery__id">Арт 123456</span>
+    		</div>
+    		<div class="gallery-item" data-images='["../img/gallery-1.jpg", "../img/gallery-2.jpg"]'>
+    			<div class="gallery__img" style="background-image: url(../img/gallery-3.jpg);">
+    				<div class="gallery-hover modal-btn flex jc-end ai-center flex-column" data-target="gallery">
+    					<button class="standart-btn standart-btn_black gallery-hover__btn">заказать такое изделие</button>
+    					<span class="gallery-hover__text">Смотреть все фото (+3)</span>
+    				</div>
+    			</div>
+    			<span class="gallery__name">Гаражные ворота Ритена</span>
+    			<span class="gallery__id">Арт 123456</span>
+    		</div>
+    		<div class="gallery-item" data-images='["../img/gallery-1.jpg", "../img/gallery-2.jpg"]'>
+    			<div class="gallery__img" style="background-image: url(../img/gallery-4.jpg);">
+    				<div class="gallery-hover modal-btn flex jc-end ai-center flex-column" data-target="gallery">
+    					<button class="standart-btn standart-btn_black gallery-hover__btn">заказать такое изделие</button>
+    					<span class="gallery-hover__text">Смотреть все фото (+3)</span>
+    				</div>
+    			</div>
+    			<span class="gallery__name">Гаражные ворота Ритена</span>
+    			<span class="gallery__id">Арт 123456</span>
+    		</div>
+    		<div class="gallery-item" data-images='["../img/gallery-1.jpg", "../img/gallery-2.jpg"]'>
+    			<div class="gallery__img" style="background-image: url(../img/gallery-5.jpg);">
+    				<div class="gallery-hover modal-btn flex jc-end ai-center flex-column" data-target="gallery">
+    					<button class="standart-btn standart-btn_black gallery-hover__btn">заказать такое изделие</button>
+    					<span class="gallery-hover__text">Смотреть все фото (+3)</span>
+    				</div>
+    			</div>
+    			<span class="gallery__name">Гаражные ворота Ритена</span>
+    			<span class="gallery__id">Арт 123456</span>
+    		</div>
+    		<div class="gallery-item" data-images='["../img/gallery-1.jpg", "../img/gallery-2.jpg"]'>
+    			<div class="gallery__img" style="background-image: url(../img/gallery-1.jpg);">
+    				<div class="gallery-hover modal-btn flex jc-end ai-center flex-column" data-target="gallery">
+    					<button class="standart-btn standart-btn_black gallery-hover__btn">заказать такое изделие</button>
+    					<span class="gallery-hover__text">Смотреть все фото (+3)</span>
+    				</div>
+    			</div>
+    			<span class="gallery__name">Гаражные ворота Ритена</span>
+    			<span class="gallery__id">Арт 123456</span>
+    		</div>
+    		<div class="gallery-item" data-images='["../img/gallery-1.jpg", "../img/gallery-2.jpg"]'>
+    			<div class="gallery__img" style="background-image: url(../img/gallery-2.jpg);">
+    				<div class="gallery-hover modal-btn flex jc-end ai-center flex-column" data-target="gallery">
+    					<button class="standart-btn standart-btn_black gallery-hover__btn">заказать такое изделие</button>
+    					<span class="gallery-hover__text">Смотреть все фото (+3)</span>
+    				</div>
+    			</div>
+    			<span class="gallery__name">Гаражные ворота Ритена</span>
+    			<span class="gallery__id">Арт 123456</span>
+    		</div>
+    	</div>
+    	<div class="pagination flex-between">
+				<div class="pagination-container flex jc-center">
+					<a href="#" class="pagination__arrow flex ai-center jc-center"><div class="icon-slider-arrow"></div></a>
+					<a href="#" class="pagination__item flex ai-center jc-center current">1</a>
+					<a href="#" class="pagination__item flex ai-center jc-center">2</a>
+					<a href="#" class="pagination__item flex ai-center jc-center">3</a>
+					<div class="pagination__more">. . .</div>
+					<a href="#" class="pagination__item flex ai-center jc-center">8</a>
+					<a href="#" class="pagination__arrow flex ai-center jc-center"><div class="icon-slider-arrow" style="transform: rotate(180deg);"></div></a>
+				</div>
+			</div>
+
+    </section>
+		<section class="seo">
+			<div class="wrapper">
+				<h1 class="title-l title-l_blue seo__title">Seo-текст</h1>
+				<p>Высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки поставленных обществом задач. В целом, конечно, существующая теория в значительной степени обусловливает важность как самодостаточных, так и внешне зависимых концептуальных решений. <br><br>
+				Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: внедрение современных методик в значительной степени обусловливает важность экспериментов, поражающих по своей масштабности и грандиозности. <br><br>
+				Банальные, но неопровержимые выводы, а также сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения, а значит, должны быть представлены в исключительно положительном свете.</p>
+			</div>
+		</section>
+		<div class="modal modal-gallery" data-target="gallery">
+			<div class="modal-container wrapper">
+				<div class="modal-close"></div>
+				<p class="modal-gallery__title"><span class="name">Кованые перила Ажур</span><span class="modal__id">Арт 12345</span></p>
+				<div class="modal-slider">
+
+				</div>
+				<div class="button modal-gallery__btn standart-btn standart-btn_gold mx-auto">заказать такое изделие</div>
+				<div class="flex jc-between">
+					<button class="modal-gallery__prev"><i class="icon-slider-arrow"></i>предыдущий проект</button>
+					<button class="modal-gallery__next">следующий проект<i class="icon-slider-arrow"></i></button>
+				</div>
+			</div>
+		</div>
+        <div class="modal modal_standart modal-order">
+            <div class="modal-container">
+                <div class="modal-close"></div>
+                <h1 class="modal__title title-l title-l_blue">заказать изделие</h1>
+                <span class="id"></span>
+                <input type="text" placeholder="Имя">
+                <input type="tel" placeholder="Телефон*">
+                <textarea cols="30" rows="10" placeholder="Комментарий"></textarea>
+                <button class="standart-btn standart-btn_gold mx-auto">заказать</button>
+                <p class="mx-auto">Нажимая “Заказать” вы соглашаетесь <br> с <a href="documents/politics.html" class="politics-link">политикой конфиденциальности</a></p>
+            </div>
+        </div>
+	</main>
+	<footer class="footer flex ai-center">
+        <div class="modal modal_standart" data-target="callback">
+            <div class="modal-container">
+                <div class="modal-close"></div>
+                <h1 class="modal__title title-l title-l_blue">обратный звонок</h1>
+                <input type="text" placeholder="Имя">
+                <input type="tel" placeholder="Телефон*">
+                <button class="standart-btn standart-btn_gold mx-auto">заказать звонок</button>
+                <p class="mx-auto">Нажимая “Заказать звонок” вы соглашаетесь <br> с <a href="politics.html" class="politics-link">политикой конфиденциальности</a></p>
+            </div>
+        </div>
+        <div class="wrapper flex jc-between ai-center">
+            <a href="../index.html" class="footer__logo title">Левша138</a>
+            <a href="tel:+74951492995" class="footer__tel">+7 (495) 149-29-95</a>
+            <div class="footer-container flex jc-between ai-center">
+                <a href="mailto:contact@proektresurs.ru" class="footer__email"><i class="icon-mail"></i>contact@proektresurs.ru</a>
+                <a href="#" class="footer__inst"><i class="icon-inst"></i>мы в instagram</a>
+            </div>
+        </div>
+    </footer>
+	<script src="../script/jquery.js"></script>
+	<script src="../script/slick.min.js"></script>
+	<script src="../script/script.js"></script>
+	<script>
+		APP.galleryFilterBtn = $('.gallery-filter__current');
+		APP.galleryFilterItem = $('.gallery-filter__item');
+		APP.galleryItem = $('.gallery-hover');
+		APP.nextGallery = $('.modal-gallery__next');
+		APP.prevGallery = $('.modal-gallery__prev');
+
+		function slickInit() {
+			var slider = $('.modal-slider');
+			if(slider.hasClass('slick-initialized')){
+				slider.slick('destroy');
+			}
+			slider.slick({
+				infinite: true,
+				arrows: true,
+				nextArrow: '<button class="slick-next slick-arrow"><i class="icon-slider-arrow"></i></button>',
+     		prevArrow: '<button class="slick-prev slick-arrow"><i class="icon-slider-arrow"></i></button>',
+			});
+		}
+
+		APP.nextGallery.on('click', function(){
+			$('.gallery-hover.active').parents('.gallery-item').next().find('.gallery-hover').click();
+		});
+
+		APP.prevGallery.on('click', function(){
+			$('.gallery-hover.active').parents('.gallery-item').prev().find('.gallery-hover').click();
+		});
+
+		APP.galleryFilterItem.on('click', function(){
+	    $(this).parents('.gallery-filter').find('.gallery-filter__item').removeClass('current');
+	    $(this).addClass('current');
+	    $(this).parents('.gallery-filter').find('.gallery-filter__current .text').text($(this).text());
+	    $(this).parents('.gallery-filter').removeClass('active');
+	  });
+  APP.galleryFilterBtn.on('click', function(){
+    $(this).parents('.gallery-filter').toggleClass('active');
+  });
+
+  	APP.galleryItem.on('click', function(event){
+      if(!$(event.target).hasClass('gallery-hover__btn')){
+        var data = $(this).parents('.gallery-item').data('images'),
+          slider = $('.modal-slider'),
+          name = $(this).parents('.gallery-item').find('.gallery__name').text(),
+          id = $(this).parents('.gallery-item').find('.gallery__id').text();
+
+        $('.modal-gallery__title .name').text(name);
+        $('.modal-gallery__title .id').text(id);
+        APP.galleryItem.removeClass('active');
+        $(this).addClass('active');
+        slider.html('');
+
+
+        $.each(data, function(key, item){
+          var template = '<div class="modal-gallery__slide" style="background-image: url('+item+');"></div>';
+
+          slider.append(template)
+        });
+
+        slickInit();
+      } else {
+        var id = $(this).parent('.gallery-item').find('.gallery__id').text();
+
+        $('.modal-order').find('.modal__id').text(id).end().addClass('active');
+      }
+
+  	});
+
+  	$(document).on('click', function(event){
+  		if(!$(event.target).parents('.gallery-filter').length){
+  			$('.gallery-filter').removeClass('active');
+  		}
+  	})
+
+
+	</script>
+</body>
+</html>
