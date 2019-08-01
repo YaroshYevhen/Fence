@@ -1862,7 +1862,6 @@ body.menu {
 	&-item {
 		margin: 0 0 40px 30px;
 		width: calc(33.33% - 30px);
-		cursor: pointer;
 		&:hover {
 			.gallery__name {
 				color: #c3a341;
@@ -1903,6 +1902,7 @@ body.menu {
 		padding-bottom: 30px;
 		transform: translateX(-100%);
 		transition: transform .3s ease-in-out;
+		cursor: pointer;
 		&::before {
 			content: "";
 		  width: 100%;

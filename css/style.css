@@ -2236,7 +2236,6 @@ body.menu .nav-ul {
 .gallery-item {
   margin: 0 0 40px 30px;
   width: calc(33.33% - 30px);
-  cursor: pointer;
 }
 
 .gallery-item:hover .gallery__name {
@@ -2282,6 +2281,7 @@ body.menu .nav-ul {
   padding-bottom: 30px;
   transform: translateX(-100%);
   transition: transform .3s ease-in-out;
+  cursor: pointer;
 }
 
 .gallery-hover::before {
