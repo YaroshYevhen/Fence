@@ -13,6 +13,19 @@ APP.modal = $('.modal');
 APP.closeModal = $('.modal-close');
 APP.scrollBtn = $('.scroll-to-calc');
 
+function doAnimation(){
+    var windowScroll = $(window).height() + APP.$document.scrollTop(),
+        element = APP.$document.find('.js-animation:not(.animate)')[0];
+
+  $('.js-animation:not(.animate), .js-opacity:not(.animate)').each(function(key, item){
+    var itemOffset = $(item).offset().top + 100,
+        tableParent = $(item).parents('.palette-table');
+    if(windowScroll >= itemOffset){
+        $(item).addClass('animate');
+    }
+  });
+};
+
 function closeModal(){
   APP.modal.removeClass('active');
   $('html').removeClass('overflow');
@@ -44,6 +57,20 @@ function galleryCountSlides(){
 }
 
 APP.$document.ready(function() {
+	doAnimation ();
+	$('.selected-files').hide();
+	calculatorCountSlides();
+	galleryCountSlides();
+
+	APP.$document.on('scroll', function(event){
+    doAnimation ();
+    if($('header').offset().top !== 0){
+      $('header').addClass('black');
+    } else {
+      $('header').removeClass('black');
+    }
+  });
+
 	APP.scrollBtn.on('click', function(){
 		if($('.calc').length) {
 			var calcPosition = $('.calc').position().top;
@@ -91,8 +118,6 @@ APP.$document.ready(function() {
     	$('html').addClass('overflow'); 
     }
   });
-
-	$('.selected-files').hide();
 
 	APP.uploadFile.on('click', function() {
 			APP.wpFile.click();
@@ -149,8 +174,7 @@ APP.$document.ready(function() {
     calculatorCountSlides();
   });
 
-	calculatorCountSlides();
-	galleryCountSlides();
+	
 
 	APP.gallerySliderArrow.on('click', function(){
 		var first = $('.gallery-slider .first'),

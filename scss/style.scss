@@ -148,7 +148,13 @@ textarea {
 		color: #9c9c9c;
 	}
 }
-
+.js-opacity {
+	opacity: 0;
+	transition: opacity .6s;
+	&.animate {
+		opacity: 1;
+	}
+}
 /* styles */
 .wrapper {
   max-width: 1140px;
@@ -286,6 +292,40 @@ textarea {
 
 /*****************/
 /* HEADER */
+@keyframes swing
+{
+  3%
+  {
+      -webkit-transform: translateX(5px);
+      transform: translateX(5px);
+  }
+  6%
+  {
+      -webkit-transform: translateX(-5px);
+      transform: translateX(-5px);
+  }
+  10%
+  {
+      -webkit-transform: translateX(3px);
+      transform: translateX(3px);
+  }
+  13%
+  {
+      -webkit-transform: translateX(-3px);
+      transform: translateX(-3px);
+  }
+  16%
+  {
+      -webkit-transform: translateX(2px);
+      transform: translateX(2px);
+  }
+  20%,
+  100%
+  {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+  }
+}
 
 @keyframes drop {
   from {
@@ -325,6 +365,9 @@ main {
 	height: 80px;
 	width: 100%;
 	background-color: #111;
+	&__btn {
+		animation: swing 5s ease infinite;
+	}
 	&-container {
 		height: 100%;
 		width: 100%;
@@ -582,6 +625,13 @@ body.menu {
 		width: calc(33.3% - 30px);
 		height: 250px;
 		margin: 0 0 30px 30px;
+		transform: translateY(100px);
+		opacity: 0;
+		transition: transform .3s, opacity .3s;
+		&.animate {
+			transform: none;
+			opacity: 1;
+		}
 		&:not(:nth-of-type(3n + 2)) {
 			margin-top: -110px;
 		}
@@ -749,9 +799,29 @@ body.menu {
 	&__title {
 		margin-bottom: 40px;
 		text-align: center;
+		opacity: 0;
+		transition: opacity .6s;
 	}
 	&-container {
 		margin: 0 0 -20px -30px;
+		&.animate {
+			.production__title {
+				opacity: 1;
+			}
+			.production-item {
+				transform: none;
+				opacity: 1;
+				&:nth-of-type(4n + 2) {
+					transition-delay: .1s;
+				}
+				&:nth-of-type(4n + 3) {
+					transition-delay: .2s;
+				}
+				&:nth-of-type(4n + 4) {
+					transition-delay: .3s;
+				}
+			}
+		}
 	}
 	&-item {
 		position: relative;
@@ -759,6 +829,9 @@ body.menu {
 		width: calc(25% - 30px);
 		margin: 0 0 20px 30px;
 		padding-bottom: 5px;
+		transform: translateX(100px);
+		opacity: 0;
+		transition: transform .3s, opacity .3s;
 		&::before {
 			content: "";
 			position: absolute;
@@ -1245,6 +1318,7 @@ body.menu {
 
 .features {
 	margin-bottom: 130px;
+	position: relative;
 	&__title {
 		text-align: center;
 		margin-bottom: 40px;
@@ -1257,10 +1331,28 @@ body.menu {
 	&-container {
 		width: calc(100% - 475px);
 		margin: 0 0 -45px -35px;
+		&.animate {
+			.features-item {
+				transform: none;
+				opacity: 1;
+				&:nth-of-type(2) {
+					transition-delay: .1s;
+				}
+				&:nth-of-type(3) {
+					transition-delay: .2s;
+				}
+				&:nth-of-type(4) {
+					transition-delay: .3s;
+				}
+			}
+		}
 	}
 	&-item {
 		width: calc(50% - 35px);
 		margin: 0 0 45px 35px;
+		opacity: 0;
+		transform: translateX(100px);
+		transition: opacity .3s, transform .3s;
 		&__title {
 			font-weight: 700;
 			margin-bottom: 5px;
@@ -1618,6 +1710,11 @@ body.menu {
 
 .article {
 	margin-bottom: 150px;
+	&.animate {
+		.article__img {
+			transform: none;
+		}
+	}
 	&__title {
 		margin-bottom: 50px;
 	}
@@ -1645,16 +1742,19 @@ body.menu {
 	}
 	&__img {
 		max-width: 50%;
+		transition: transform .3s;
 		&:nth-of-type(odd) {
 			float: left;
 			margin-right: 30px;
 			margin-bottom: 25px;
+			transform: translateX(-100px);
 		}
 		&:nth-of-type(even) {
 			float: right;
 			margin-left: 30px;
 			margin-top: 25px;
 			margin-bottom: 25px;
+			transform: translateX(100px);
 		}
 	}
 }

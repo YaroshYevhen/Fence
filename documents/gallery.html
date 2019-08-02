@@ -46,7 +46,7 @@
       <li class="breadcrumbs__item"><a href="#">Главная</a></li>
       <li class="breadcrumbs__item"><a href="#">Галерея</a></li>
     </ul>
-    <section class="gallery wrapper">
+    <section class="gallery wrapper js-opacity">
     	<h1 class="gallery__title title-l title-l_blue">галерея</h1>
     	<div class="gallery-filter">
     		<span class="gallery-filter__current flex ai-center"><i class="icon-filter"></i><span class="text">Все проекты</span><i class="icon-dropdown"></i></span>
@@ -199,7 +199,7 @@
 			</div>
 
     </section>
-		<section class="seo">
+		<section class="seo js-opacity">
 			<div class="wrapper">
 				<h1 class="title-l title-l_blue seo__title">Seo-текст</h1>
 				<p>Высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки поставленных обществом задач. В целом, конечно, существующая теория в значительной степени обусловливает важность как самодостаточных, так и внешне зависимых концептуальных решений. <br><br>
@@ -303,7 +303,7 @@
           id = $(this).parents('.gallery-item').find('.gallery__id').text();
 
         $('.modal-gallery__title .name').text(name);
-        $('.modal-gallery__title .id').text(id);
+        $('.modal-gallery__title .modal__id').text(id);
         APP.galleryItem.removeClass('active');
         $(this).addClass('active');
         slider.html('');
@@ -317,9 +317,10 @@
 
         slickInit();
       } else {
-        var id = $(this).parent('.gallery-item').find('.gallery__id').text();
+        var  id = $(this).parents('.gallery-item').find('.gallery__id').text();
 
-        $('.modal-order').find('.modal__id').text(id).end().addClass('active');
+        $('.modal-order').find('.id').text(id).end().addClass('active')
+        console.log(id)
       }
 
   	});
