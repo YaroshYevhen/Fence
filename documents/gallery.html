@@ -263,6 +263,7 @@
 		APP.galleryItem = $('.gallery-hover');
 		APP.nextGallery = $('.modal-gallery__next');
 		APP.prevGallery = $('.modal-gallery__prev');
+    APP.galleryHover = $('.gallery-item');
 
 		function slickInit() {
 			var slider = $('.modal-slider');
@@ -276,6 +277,12 @@
      		prevArrow: '<button class="slick-prev slick-arrow"><i class="icon-slider-arrow"></i></button>',
 			});
 		}
+
+    APP.galleryHover.hover(function(){
+      var hover = $(this).find('.gallery-hover');
+
+      hover.hover();
+    });
 
 		APP.nextGallery.on('click', function(){
 			$('.gallery-hover.active').parents('.gallery-item').next().find('.gallery-hover').click();
