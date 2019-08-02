@@ -75,7 +75,7 @@
     color: #eebe2b;
   }
   .gallery-slider__arrow:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #f3f3f3;
     color: #a08b49;
   }
   .gallery-slider__slide:hover::before {
