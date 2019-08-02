@@ -515,6 +515,9 @@
   .address__item + .address__item {
     margin-top: 0;
   }
+  .politics {
+    max-width: 720px;
+  }
 }
 
 /*************************************/
@@ -1173,6 +1176,12 @@
   .modal_standart .modal-container {
     max-width: 360px;
     padding: 45px 30px;
+  }
+  .politics {
+    max-width: 360px;
+  }
+  .politics h1 {
+    font-size: 32px;
   }
 }
 

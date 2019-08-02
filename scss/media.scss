@@ -583,6 +583,9 @@
 			}
 		}
 	}
+	.politics {
+		max-width: 720px;
+	}
 }
 
 /*************************************/
@@ -1287,6 +1290,12 @@
 		.modal-container {
 			max-width: 360px;
 			padding: 45px 30px;
+		}
+	}
+	.politics {
+		max-width: 360px;
+		h1 {
+			font-size: 32px;
 		}
 	}
 }
