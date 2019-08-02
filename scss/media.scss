@@ -1,6 +1,28 @@
 /********* min-width: 1139px *********/
 
 @media (min-width: 1139px) {
+	.gallery-filter__current:hover {
+		color: #c3a341;
+	}
+	.modal-close:hover {
+		&::before {
+			background-color: #c3a341;
+		}
+		&::after {
+			background-color: #c3a341;
+		}
+	}
+	.pagination__arrow:hover {
+		background-color: #f3f3f3;
+		color: #a08b49
+	}
+	.callback__text a:hover {
+		color: #eebe2b;
+	}
+	.steps__application:hover {
+		color: #eebe2b;
+		text-decoration: underline #eebe2b;
+	}
 	.politics-link:hover {
 		color: #c3a341;
 		text-decoration: underline #c3a341;;
@@ -17,7 +39,7 @@
 		color: #c3a341;
 	}
 	.blog-slider .slick-arrow:hover {
-		background-color: rgba(0, 0, 0, .2);
+		background-color: #f3f3f3;
 		color: #a08b49
 	}
 	.pagination__item:hover {
@@ -34,8 +56,10 @@
 		}
 	}
 	.blog-tabs__item:hover {
+		color: #c3a341;
 		&::after {
 			width: 100%;
+			background-color: #c3a341;
 		}
 	}
 	.breadcrumbs__item:hover {
@@ -258,9 +282,11 @@
 	}
 	.callback {
 		margin-bottom: 90px;
+	&__text {
 		br {
 			display: none;
 		}
+	}
 		&__input {
 			width: 210px;
 			margin-right: 30px;
@@ -593,6 +619,9 @@
 /********* max-width: 767px *********/
 
 @media (max-width: 767px) {
+	.pagination__arrow {
+		width: auto;
+	}
 	.modal.active {
 		align-items: flex-start;
 	}
@@ -1181,14 +1210,14 @@
 		&-filter {
 			&__current {
 				.text {
-					width: 291px;
+					width: 276px;
 					&::after {
-						width: 300px;
+						width: 285px;
 					}
 				}
 			}
 			&__dropdown {
-				width: 345px;
+				width: 330px;
 			}
 		}
 	}

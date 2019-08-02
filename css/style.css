@@ -847,6 +847,7 @@ body.menu .nav-ul {
   color: #c3a341;
   text-decoration: underline #c3a341;
   cursor: pointer;
+  transition: color .3s, text-decoration .3s;
 }
 
 /*********************/
@@ -860,6 +861,13 @@ body.menu .nav-ul {
   margin-bottom: 30px;
 }
 
+.callback-form + p {
+  margin-top: 15px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
 .callback__text {
   text-align: center;
   font-size: 16px;
@@ -870,6 +878,7 @@ body.menu .nav-ul {
   font-weight: 700;
   white-space: nowrap;
   color: #c3a341;
+  transition: color .3s;
 }
 
 .callback__input {
@@ -2010,7 +2019,10 @@ body.menu .nav-ul {
 
 .pagination__arrow {
   font-size: 13px;
+  height: 28px;
+  width: 62px;
   color: #3b3b3b;
+  transition: color .3s, background .3s;
 }
 
 .pagination__item {
@@ -2255,8 +2267,8 @@ body.menu .nav-ul {
   margin-left: auto;
   position: relative;
   cursor: pointer;
-  transition: z-index 0s;
-  transition-delay: .4s;
+  transition: z-index 0s, color .3s;
+  transition-delay: .4s, 0s;
 }
 
 .gallery-filter__current .text {
@@ -2289,7 +2301,7 @@ body.menu .nav-ul {
 .gallery-filter__dropdown {
   position: absolute;
   z-index: 0;
-  left: -1px;
+  left: 0px;
   top: -30px;
   width: 275px;
   white-space: nowrap;
@@ -2339,10 +2351,6 @@ body.menu .nav-ul {
 .gallery-item {
   margin: 0 0 40px 30px;
   width: calc(33.33% - 30px);
-}
-
-.gallery-item:hover .gallery__name {
-  color: #c3a341;
 }
 
 .gallery-item:hover .gallery-hover {

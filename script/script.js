@@ -49,7 +49,7 @@ function currentSlideCount(item){
 
 function galleryCountSlides(){
 	var total = $('.gallery-slider__slide').length,
-			current = $('.gallery-slider__slide.current').index('.gallery-slider__slide') + 1;
+			current = $('.gallery-slider__slide.current').data('index');
 
 	$('.gallery-slider-counter__current').text(current);
 	$('.gallery-slider-counter__total').text(total);
@@ -61,6 +61,7 @@ APP.$document.ready(function() {
 	$('.selected-files').hide();
 	calculatorCountSlides();
 	galleryCountSlides();
+
 
 	APP.$document.on('scroll', function(event){
     doAnimation ();
@@ -185,8 +186,13 @@ APP.$document.ready(function() {
 				next = fifth.next(),
 				prev = first.prev();
 
-		if($(this).hasClass('gallery-slider__next') && current.index('.gallery-slider__slide') !== ($('.gallery-slider__slide').length - 1)){
-			
+		if($(this).hasClass('gallery-slider__next')){
+			var slide = $('.gallery-slider__slide').first(),
+					clone = slide.clone().removeClass('prev');
+
+			slide.remove();
+			$('.gallery-slider-container').append(clone);
+
 			first.css({"transition-delay": ".3s, 0s, 0s"}).addClass('prev').removeClass('first');
 			second.css({"transition-delay": ".3s, .3s, 0s"}).addClass('first').removeClass('second');
 			current.css({"transition-delay": "0s, .3s, .45s"}).addClass('second').removeClass('current');
@@ -194,7 +200,12 @@ APP.$document.ready(function() {
 			fifth.css({"transition-delay": ".3s, .45s, 0s"}).addClass('fourth').removeClass('fifth');
 			next.css({"transition-delay": ".3s, 0s, .6s"}).addClass('fifth');
 
-		} else if($(this).hasClass('gallery-slider__prev') && current.index('.gallery-slider__slide') !== 0) {
+		} else if($(this).hasClass('gallery-slider__prev')) {
+			var slide = $('.gallery-slider__slide').last(),
+					clone = slide.clone().addClass('prev');
+
+			slide.remove();
+			$('.gallery-slider-container').prepend(clone);
 
 			prev.css({"transition-delay": ".3s, 0s, .45s"}).addClass('first').removeClass('prev');
 			first.css({"transition-delay": ".3s, .45s, 0s"}).addClass('second').removeClass('first');
