@@ -62,6 +62,10 @@ APP.$document.ready(function() {
 	calculatorCountSlides();
 	galleryCountSlides();
 
+	$('.main-slider__text .title').hover (function(){
+		$(this).hide()
+	})
+
 	APP.$document.on('scroll', function(event){
     doAnimation ();
     if($('header').offset().top !== 0){
