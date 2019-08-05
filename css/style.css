@@ -2233,7 +2233,7 @@ body.menu .nav-ul {
   position: relative;
   transition: z-index 0s;
   transition-delay: .3s;
-  width: fit-content;
+  display: flex;
   margin-left: auto;
   margin-bottom: 30px;
 }
