@@ -693,6 +693,9 @@
 		margin-bottom: 70px;
 		&__text {
 			top: 130px;
+			.standart-btn {
+				width: 100%;
+			}
 		}
 		.title {
 			font-size: 21px;
@@ -814,6 +817,9 @@
 		}
 		&-item {
 			width: calc(50% - 30px);
+		}
+		&__btn {
+			width: 100%;
 		}
 		.production-item {
 			&:nth-of-type(n + 5) {
