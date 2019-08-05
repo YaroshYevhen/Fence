@@ -623,6 +623,9 @@
   .main-slider__text {
     top: 130px;
   }
+  .main-slider__text .standart-btn {
+    width: 100%;
+  }
   .main-slider .title {
     font-size: 21px;
     line-height: 30px;
@@ -726,6 +729,9 @@
   }
   .production-item {
     width: calc(50% - 30px);
+  }
+  .production__btn {
+    width: 100%;
   }
   .production .production-item:nth-of-type(n + 5) {
     display: none;

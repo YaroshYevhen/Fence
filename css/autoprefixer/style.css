@@ -666,7 +666,7 @@ main {
 
 .header-callback {
   color: #fff;
-  width: 185px;
+  width: 190px;
 }
 
 .header-callback span {
@@ -984,13 +984,13 @@ body.menu .nav-ul {
   text-align: center;
   font-size: 16px;
   line-height: 20px;
+  width: 100%;
 }
 
 .steps__application {
   font-size: 16px;
   color: #c3a341;
-  -webkit-text-decoration: underline #c3a341;
-  text-decoration: underline #c3a341;
+  text-decoration: underline;
   cursor: pointer;
   -webkit-transition: color .3s, -webkit-text-decoration .3s;
   transition: color .3s, -webkit-text-decoration .3s;
@@ -1057,14 +1057,15 @@ body.menu .nav-ul {
 
 .gallery-slider__slide {
   background: 50% 50% / cover no-repeat;
-  height: calc(50% - 15px);
+  height: 100%;
+  max-height: calc(50% - 15px);
   width: 350px;
   position: absolute;
   cursor: pointer;
   bottom: 0;
   right: -350px;
-  -webkit-transition: height .3s linear, bottom .3s linear, right .3s linear;
-  transition: height .3s linear, bottom .3s linear, right .3s linear;
+  -webkit-transition: max-height .3s linear, bottom .3s linear, right .3s linear;
+  transition: max-height .3s linear, bottom .3s linear, right .3s linear;
   -webkit-transition-delay: .3s, 0s, 0s;
   transition-delay: .3s, 0s, 0s;
 }
@@ -1097,7 +1098,7 @@ body.menu .nav-ul {
 }
 
 .gallery-slider__slide.current {
-  height: 100%;
+  max-height: 100%;
   bottom: 0;
   right: 380px;
 }
@@ -2495,9 +2496,10 @@ body.menu .nav-ul {
   transition: z-index 0s;
   -webkit-transition-delay: .3s;
   transition-delay: .3s;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: auto;
   margin-bottom: 30px;
 }
@@ -2575,7 +2577,7 @@ body.menu .nav-ul {
 .gallery-filter__dropdown {
   position: absolute;
   z-index: 0;
-  left: 0px;
+  right: -30px;
   top: -30px;
   width: 275px;
   white-space: nowrap;
@@ -2754,8 +2756,9 @@ body.menu .nav-ul {
 }
 
 .politics-link {
-  -webkit-text-decoration: underline #666;
-  text-decoration: underline #666;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #666;
+  text-decoration-color: #666;
   -webkit-transition: color .3s, -webkit-text-decoration .3s;
   transition: color .3s, -webkit-text-decoration .3s;
   transition: color .3s, text-decoration .3s;
@@ -2763,8 +2766,8 @@ body.menu .nav-ul {
 }
 
 .address {
-  width: calc(100% - 880px);
-  margin-right: 150px;
+  width: calc(100% - 850px);
+  margin-right: 120px;
 }
 
 .address__name {
@@ -2943,10 +2946,6 @@ body.menu .nav-ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
