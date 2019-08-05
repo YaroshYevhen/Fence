@@ -2473,8 +2473,8 @@ body.menu .nav-ul {
 }
 
 .address {
-  width: calc(100% - 880px);
-  margin-right: 150px;
+  width: calc(100% - 850px);
+  margin-right: 120px;
 }
 
 .address__name {
