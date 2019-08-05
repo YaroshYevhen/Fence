@@ -2303,7 +2303,7 @@ body.menu .nav-ul {
 .gallery-filter__dropdown {
   position: absolute;
   z-index: 0;
-  left: 0px;
+  right: -30px;
   top: -30px;
   width: 275px;
   white-space: nowrap;

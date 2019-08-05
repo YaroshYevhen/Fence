@@ -1120,6 +1120,7 @@
   }
   .gallery-filter__dropdown {
     width: 330px;
+    right: -15px;
   }
   .modal-gallery__next {
     width: 130px;
