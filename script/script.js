@@ -49,8 +49,8 @@ function currentSlideCount(item){
 
 function galleryCountSlides(){
 	var total = $('.gallery-slider__slide').length,
-			current = $('.gallery-slider__slide.current').data('index') - 4;
-
+			current = $('.gallery-slider__slide.current').data('index');
+      
 	$('.gallery-slider-counter__current').text(current);
 	$('.gallery-slider-counter__total').text(total);
 
