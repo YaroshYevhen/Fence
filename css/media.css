@@ -150,6 +150,9 @@
 /*************************************/
 /********* max-width: 1139px *********/
 @media (max-width: 1139px) {
+  main {
+    margin-top: 105px;
+  }
   .standart-btn_small {
     width: 210px;
   }
@@ -354,9 +357,9 @@
     columns: 1;
   }
   .service {
-    padding-top: 400px;
-    padding-bottom: 120px;
     margin-bottom: 90px;
+    padding-top: 250px;
+    height: calc(100vh - 105px);
   }
   .service__title {
     font-size: 60px;
@@ -547,6 +550,9 @@
 /*************************************/
 /********* max-width: 767px *********/
 @media (max-width: 767px) {
+  main {
+    margin-top: 80px;
+  }
   .pagination__arrow {
     width: auto;
   }
@@ -859,6 +865,7 @@
     padding-bottom: 30px;
     margin-top: -79px;
     margin-bottom: 70px;
+    height: auto;
   }
   .service__more {
     margin-top: 5px;
