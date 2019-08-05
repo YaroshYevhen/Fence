@@ -552,7 +552,7 @@ main {
 
 .header-callback {
   color: #fff;
-  width: 185px;
+  width: 190px;
 }
 
 .header-callback span {
@@ -840,12 +840,13 @@ body.menu .nav-ul {
   text-align: center;
   font-size: 16px;
   line-height: 20px;
+  width: 100%;
 }
 
 .steps__application {
   font-size: 16px;
   color: #c3a341;
-  text-decoration: underline #c3a341;
+  text-decoration: underline;
   cursor: pointer;
   transition: color .3s, text-decoration .3s;
 }
@@ -2465,7 +2466,8 @@ body.menu .nav-ul {
 }
 
 .politics-link {
-  text-decoration: underline #666;
+  text-decoration: underline;
+  text-decoration-color: #666;
   transition: color .3s, text-decoration .3s;
 }
 
