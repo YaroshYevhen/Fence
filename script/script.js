@@ -193,12 +193,12 @@ APP.$document.ready(function() {
 			slide.remove();
 			$('.gallery-slider-container').append(clone);
 
-			first.css({"transition-delay": ".3s, 0s, 0s", "-webkit-transition-delay": ".3s, 0s, 0s"}).addClass('prev').removeClass('first');
-			second.css({"transition-delay": ".3s, .3s, 0s", "-webkit-transition-delay": ".3s, .3s, 0s"}).addClass('first').removeClass('second');
-			current.css({"transition-delay": "0s, .3s, .45s", "-webkit-transition-delay": "0s, .3s, .45s"}).addClass('second').removeClass('current');
-			fourth.css({"transition-delay": ".6s, .6s, .3s", "-webkit-transition-delay": ".6s, .6s, .3s"}).addClass('current').removeClass('fourth');
-			fifth.css({"transition-delay": ".3s, .45s, 0s", "-webkit-transition-delay": ".3s, .45s, 0s"}).addClass('fourth').removeClass('fifth');
-			next.css({"transition-delay": ".3s, 0s, .6s", "-webkit-transition-delay": ".3s, 0s, .6s"}).addClass('fifth');
+			first.css({"transition-delay": ".3s, 0s, 0s"}).addClass('prev').removeClass('first');
+			second.css({"transition-delay": ".3s, .3s, 0s"}).addClass('first').removeClass('second');
+			current.css({"transition-delay": "0s, .3s, .45s"}).addClass('second').removeClass('current');
+			fourth.css({"transition-delay": ".6s, .6s, .3s"}).addClass('current').removeClass('fourth');
+			fifth.css({"transition-delay": ".3s, .45s, 0s"}).addClass('fourth').removeClass('fifth');
+			next.css({"transition-delay": ".3s, 0s, .6s"}).addClass('fifth');
 
 		} else if($(this).hasClass('gallery-slider__prev')) {
 			var slide = $('.gallery-slider__slide').last(),
